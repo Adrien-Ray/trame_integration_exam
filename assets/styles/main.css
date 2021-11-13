@@ -1,0 +1,63 @@
+.scroll {
+  height: 140vh;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0.2rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav__child--logo {
+  height: 3rem;
+  cursor: pointer;
+}
+
+nav .nav__child--title {
+  margin: 0 0.4rem;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+nav .nav__child--title a {
+  cursor: pointer;
+}
+
+nav .nav__child--list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .nav__child--list li {
+  padding: 0 0.5rem;
+}
+
+nav .nav__child--list li a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+nav .nav__child--list li a:hover {
+  color: black;
+}
+
+nav .nav__child--burger {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

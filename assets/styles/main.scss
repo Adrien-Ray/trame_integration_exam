@@ -1,0 +1,41 @@
+.scroll{
+    height: 140vh;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav__child--logo{
+        height: 3rem;
+        cursor: pointer;
+    }
+    .nav__child--title{
+        margin: 0 0.4rem;
+        font-weight: 700;
+        font-size: x-large;
+        a{
+            cursor: pointer;
+        }
+    }
+    .nav__child--list{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        li{
+            padding: 0 0.5rem;
+            a{
+                color: rgba(0, 0, 0, 0.6);
+                &:hover{
+                    color: rgba(0, 0, 0, 1);
+                }
+            }
+        }
+    }
+    .nav__child--burger{
+        display: none;
+    }
+}

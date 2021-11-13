@@ -1,0 +1,67 @@
+@media screen and (max-width:767px) {
+    nav{
+        flex-wrap: wrap;
+        .nav__child--logo{
+            height: 2.5rem;
+        }
+        .nav__child--title{
+            margin: 0 0.3rem;
+            font-size: large;
+        }
+        .nav__child--list{
+            position: relative;
+            right: 100vw;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            order: 4;
+            min-width: calc(100vw - 2rem);
+            margin: 0;
+            padding: 0;
+            li{
+                padding: 0.5rem 0;
+            }
+        }
+        .nav__child--listShow{
+            animation-name: listShow;
+            animation-duration: 0.25s;
+            animation-fill-mode: forwards;
+        }
+        .nav__child--listNoShow{
+            animation-name: listNoShow;
+            animation-duration: 0.25s;
+            animation-fill-mode: forwards;
+        }
+        .nav__child--burger{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 2.5rem;
+            width: 2.5rem;
+            cursor:pointer;
+            div{
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                background-color: black;
+            }
+        }
+        @keyframes listShow {
+            from{
+                right: 100vw;
+            }
+            to{
+                right: 0;
+            }
+        }
+        @keyframes listNoShow {
+            from{
+                right: 0;
+            }
+            to{
+                right: 100vw;
+            }
+        }
+    }
+}
